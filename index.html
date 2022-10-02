@@ -17,5 +17,12 @@
   </body>
   <script>
     //code here
+    const textarea = document.querySelector("#input");
+    const output = document.querySelector("#output");
+
+    function update(){
+      textarea.value !== "" ? output.innerText = textarea.value : output.innerText = "Input Box Is Empty... Start Typing";
+    }
+
   </script>
 </html>
